@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-apps
+spec:
+  destination:
+    name: in-cluster
+  project: basic-cluster
+  source:
+    repoURL: https://github.com/Viva-con-Agua/argocd-apps.git
+    path: ./
+  syncPolicy:
+    automated:
+      prune: true

@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: basic-cluster
+spec:
+  description: Setup of basic cluster functionalities
+  destinations:
+    - name: in-cluster
+      server: https://kubernetes.default.svc
+      namespace: "*"
+  sourceRepos:
+    - https://github.com/Viva-con-Agua/*
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
