@@ -3,3 +3,4 @@ namespace: argocd
 resources:
   - basic-cluster/project.yml
   - basic-cluster/argocd-apps.yml
+  - basic-cluster/cert-manager.yml
