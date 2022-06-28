@@ -3,6 +3,7 @@ namespace: argocd
 resources:
   - basic-cluster/project.yml
   - basic-cluster/argocd-apps.yml
+  - basic-cluster/argocd.yml
   - basic-cluster/cert-manager.yml
   - basic-cluster/k8s-ingress.yml
   - basic-cluster/k8s-local-path-provisioner.yml
