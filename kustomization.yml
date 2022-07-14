@@ -9,3 +9,4 @@ resources:
   - basic-cluster/k8s-local-path-provisioner.yml
 
   - vca-apps/projects.yml
+  - vca-apps/vueca.yml
