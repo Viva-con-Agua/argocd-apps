@@ -20,7 +20,6 @@ spec:
         repoURL: https://github.com/Viva-con-Agua/vueca-deploy.git
         targetRevision: HEAD
         path: "{{path}}"
-        kustomize: {}
       syncPolicy:
         automated:
           prune: true
