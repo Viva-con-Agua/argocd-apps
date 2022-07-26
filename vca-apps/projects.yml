@@ -2,6 +2,25 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
+  name: vca-prod
+spec:
+  description: VcA authored applications deployed to production
+  destinations:
+    - name: in-cluster
+      server: https://kubernetes.default.svc
+      namespace: "*"
+  sourceRepos:
+    - https://github.com/Viva-con-Agua/*
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+
+
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
   name: vca-stage
 spec:
   description: VcA authored applications deployed to staging
@@ -21,9 +40,9 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: vca-prod
+  name: vca-dev
 spec:
-  description: VcA authored applications deployed to production
+  description: VcA authored applications deployed to dev
   destinations:
     - name: in-cluster
       server: https://kubernetes.default.svc
