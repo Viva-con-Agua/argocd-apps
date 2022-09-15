@@ -11,15 +11,15 @@ spec:
           - path: stages/*
   template:
     metadata:
-      name: "nats-{{path}}"
+      name: "nats-{{path.basename}}"
     spec:
       destination:
         name: in-cluster
-      project: "vca-{{path}}"
+      project: "vca-{{path.basename}}"
       source:
         repoURL: https://github.com/Viva-con-Agua/nats-deploy.git
         targetRevision: k8s_deployment
-        path: "stages/{{path}}"
+        path: "{{path}}"
       syncPolicy:
         automated:
           prune: true
