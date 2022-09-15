@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: nats
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/nats-deploy.git
+        revision: k8s_deployment
+        directories:
+          - path: stages/*
+  template:
+    metadata:
+      name: "nats-{{path}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-{{path}}"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/nats-deploy.git
+        targetRevision: k8s_deployment
+        path: "stages/{{path}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true

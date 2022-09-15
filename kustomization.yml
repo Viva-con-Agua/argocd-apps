@@ -7,6 +7,7 @@ resources:
   - basic-cluster/cert-manager.yml
   - basic-cluster/k8s-ingress.yml
   - basic-cluster/k8s-local-path-provisioner.yml
+  - basic-cluster/nats.yml
 
   - vca-apps/projects.yml
   - vca-apps/vueca.yml
