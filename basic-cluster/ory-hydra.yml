@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: hydra
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/hydra-deploy.git
+        revision: HEAD
+        directories:
+          - path: stages/*
+  template:
+    metadata:
+      name: "hydra-{{path.basename}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "hydra-{{path.basename}}"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/hydra-deploy.git
+        path: "{{path}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
