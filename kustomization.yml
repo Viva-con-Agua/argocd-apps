@@ -8,6 +8,7 @@ resources:
   - basic-cluster/k8s-ingress.yml
   - basic-cluster/k8s-local-path-provisioner.yml
   - basic-cluster/nats.yml
+  - basic-cluster/observability.yml
   - basic-cluster/ory-hydra.yml
 
   - vca-apps/projects.yml
