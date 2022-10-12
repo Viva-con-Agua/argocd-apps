@@ -20,6 +20,8 @@ spec:
         repoURL: https://github.com/Viva-con-Agua/idjango-deploy.git
         targetRevision: HEAD
         path: "{{path}}"
+        kustomize:
+          version: krm-function-patched
       syncPolicy:
         automated:
           prune: true
