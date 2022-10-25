@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: wordpress
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/wordpress-deploy.git
+        revision: HEAD
+        directories:
+          - path: sites/*
+  template:
+    metadata:
+      name: "wp-{{path.basename}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-prod"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/wordpress-deploy.git
+        path: "{{path}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
