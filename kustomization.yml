@@ -7,6 +7,7 @@ resources:
   - basic-cluster/cert-manager.yml
   - basic-cluster/k8s-ingress.yml
   - basic-cluster/k8s-local-path-provisioner.yml
+  - basic-cluster/minio.yml
   - basic-cluster/nats.yml
   - basic-cluster/observability.yml
   - basic-cluster/ory-hydra.yml
