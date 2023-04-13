@@ -19,3 +19,4 @@ resources:
   - vca-apps/pool-api.yml
   - vca-apps/vueca.yml
   - vca-apps/wordpress.yml
+  - vca-apps/vca-api.yml
