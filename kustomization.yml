@@ -12,9 +12,10 @@ resources:
   - basic-cluster/observability.yml
   - basic-cluster/ory-hydra.yml
 
+  - vca-apps/projects.yml
   - vca-apps/idjango.yml
   - vca-apps/membership-ads.yml
   - vca-apps/outline.yml
-  - vca-apps/projects.yml
+  - vca-apps/pool-api.yml
   - vca-apps/vueca.yml
   - vca-apps/wordpress.yml
