@@ -21,4 +21,5 @@ resources:
   - vca-apps/wordpress.yml
   - vca-apps/vca-api.yml
   - vca-apps/headoffice-webapp.yml
-  - vca-apps/login-webapp.yml  
+  - vca-apps/login-webapp.yml 
+  - vca-apps/ticket-form.yml
