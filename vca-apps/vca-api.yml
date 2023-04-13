@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: vca-api
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/vca-api-deploy.git
+        revision: HEAD
+        directories:
+          - path: "*"
+  template:
+    metadata:
+      name: "vca-api-{{path}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-{{path}}"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/vca-api-deploy.git
+        targetRevision: HEAD
+        path: "{{path}}"
+        kustomize:
+          version: kustomize5
+      syncPolicy:
+        automated:
+          prune: false
+          selfHeal: false
