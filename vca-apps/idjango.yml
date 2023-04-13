@@ -21,7 +21,7 @@ spec:
         targetRevision: HEAD
         path: "{{path}}"
         kustomize:
-          version: krm-function-patched
+          version: kustomize5
       syncPolicy:
         automated:
           prune: true
