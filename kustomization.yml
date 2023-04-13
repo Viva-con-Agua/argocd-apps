@@ -20,3 +20,5 @@ resources:
   - vca-apps/vueca.yml
   - vca-apps/wordpress.yml
   - vca-apps/vca-api.yml
+  - vca-apps/headoffice-webapp.yml
+  - vca-apps/login-webapp.yml  
