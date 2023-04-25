@@ -1,27 +1,28 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 namespace: argocd
 resources:
-  - basic-cluster/project.yml
-  - basic-cluster/argocd-apps.yml
-  - basic-cluster/argocd.yml
-  - basic-cluster/cert-manager.yml
-  - basic-cluster/k8s-ingress.yml
-  - basic-cluster/k8s-local-path-provisioner.yml
-  - basic-cluster/minio.yml
-  - basic-cluster/nats.yml
-  - basic-cluster/observability.yml
-  - basic-cluster/ory-hydra.yml
+    - basic-cluster/project.yml
+    - basic-cluster/argocd-apps.yml
+    - basic-cluster/argocd.yml
+    - basic-cluster/cert-manager.yml
+    - basic-cluster/k8s-ingress.yml
+    - basic-cluster/k8s-local-path-provisioner.yml
+    - basic-cluster/minio.yml
+    - basic-cluster/nats.yml
+    - basic-cluster/observability.yml
+    - basic-cluster/ory-hydra.yml
 
-  - vca-apps/projects.yml
-  - vca-apps/idjango.yml
-  - vca-apps/membership-ads.yml
-  - vca-apps/outline.yml
-  - vca-apps/pool-api.yml
-  - vca-apps/vueca.yml
-  - vca-apps/wordpress.yml
-  - vca-apps/vca-api.yml
-  - vca-apps/headoffice-webapp.yml
-  - vca-apps/login-webapp.yml 
-  - vca-apps/ticket-form.yml
-  - vca-apps/pool-webapp.yml
-  - vca-apps/choose-a-pool.yml
+    - vca-apps/projects.yml
+    - vca-apps/idjango.yml
+    - vca-apps/membership-ads.yml
+    - vca-apps/outline.yml
+    - vca-apps/pool-api.yml
+    - vca-apps/vueca.yml
+    - vca-apps/wordpress.yml
+    - vca-apps/vca-api.yml
+    - vca-apps/headoffice-webapp.yml
+    - vca-apps/login-webapp.yml
+    - vca-apps/ticket-form.yml
+    - vca-apps/pool-webapp.yml
+    - vca-apps/mediawiki.yml
+    - vca-apps/choose-a-pool.yml
