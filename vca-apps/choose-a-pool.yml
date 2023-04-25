@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: choose-a-pool
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/choose-a-pool-deploy.git
+        revision: HEAD
+        directories:
+          - path: "*"
+  template:
+    metadata:
+      name: "choose-a-pool-{{path}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-{{path}}"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/choose-a-pool-deploy.git
+        targetRevision: HEAD
+        path: "{{path}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true

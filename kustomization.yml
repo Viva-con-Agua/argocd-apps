@@ -24,3 +24,4 @@ resources:
   - vca-apps/login-webapp.yml 
   - vca-apps/ticket-form.yml
   - vca-apps/pool-webapp.yml
+  - vca-apps/choose-a-pool.yml
