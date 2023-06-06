@@ -27,3 +27,4 @@ resources:
     - vca-apps/mediawiki.yml
     - vca-apps/choose-a-pool.yml
     - vca-apps/donation-form.yml
+    - vca-apps/membership-form.yml
