@@ -28,3 +28,4 @@ resources:
     - vca-apps/choose-a-pool.yml
     - vca-apps/donation-form.yml
     - vca-apps/membership-form.yml
+    - vca-apps/washmap.yml  
