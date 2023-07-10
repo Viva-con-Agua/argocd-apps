@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: docker-registry-mirror
+spec:
+  destination:
+    name: in-cluster
+  project: basic-cluster
+  source:
+    repoURL: https://github.com/Viva-con-Agua/docker-registry-deploy.git
+    path: ./
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
