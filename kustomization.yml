@@ -30,3 +30,4 @@ resources:
     - vca-apps/donation-form.yml
     - vca-apps/membership-form.yml
     - vca-apps/washmap.yml  
+    - vca-apps/contact-form.yml  
