@@ -31,3 +31,4 @@ resources:
     - vca-apps/membership-form.yml
     - vca-apps/washmap.yml  
     - vca-apps/contact-form.yml  
+    - vca-apps/move4water-backend.yml  
