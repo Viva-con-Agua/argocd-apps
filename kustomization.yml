@@ -14,6 +14,7 @@ resources:
     - basic-cluster/ory-hydra.yml
 
     - vca-apps/projects.yml
+    - vca-apps/ccm19.yml
     - vca-apps/idjango.yml
     - vca-apps/membership-ads.yml
     - vca-apps/outline.yml
@@ -29,6 +30,6 @@ resources:
     - vca-apps/choose-a-pool.yml
     - vca-apps/donation-form.yml
     - vca-apps/membership-form.yml
-    - vca-apps/washmap.yml  
-    - vca-apps/contact-form.yml  
-    - vca-apps/move4water-backend.yml  
+    - vca-apps/washmap.yml
+    - vca-apps/contact-form.yml
+    - vca-apps/move4water-backend.yml
