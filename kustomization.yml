@@ -33,3 +33,4 @@ resources:
     - vca-apps/washmap.yml
     - vca-apps/contact-form.yml
     - vca-apps/move4water-backend.yml
+    - vca-apps/geo-server.yml  
