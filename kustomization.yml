@@ -34,4 +34,5 @@ resources:
     - vca-apps/contact-form.yml
     - vca-apps/move4water-backend.yml
     - vca-apps/move4water-webapp.yml
-    - vca-apps/geo-server.yml  
+    - vca-apps/geo-server.yml
+    - vca-apps/data-form.yml  
