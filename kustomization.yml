@@ -14,27 +14,28 @@ resources:
     - basic-cluster/ory-hydra.yml
 
     - vca-apps/projects.yml
+    - vca-apps/artsdb-backend.yml  
+    - vca-apps/artsdb-webapp.yml  
     - vca-apps/ccm19.yml
-    - vca-apps/idjango.yml
-    - vca-apps/membership-ads.yml
-    - vca-apps/outline.yml
-    - vca-apps/pool-api.yml
-    - vca-apps/vueca.yml
-    - vca-apps/wordpress.yml
-    - vca-apps/vca-api.yml
-    - vca-apps/headoffice-webapp.yml
-    - vca-apps/login-webapp.yml
-    - vca-apps/ticket-form.yml
-    - vca-apps/pool-webapp.yml
-    - vca-apps/mediawiki.yml
     - vca-apps/choose-a-pool.yml
-    - vca-apps/donation-form.yml
-    - vca-apps/membership-form.yml
-    - vca-apps/washmap.yml
     - vca-apps/contact-form.yml
+    - vca-apps/data-form.yml  
+    - vca-apps/donation-form.yml
+    - vca-apps/geo-server.yml
+    - vca-apps/headoffice-webapp.yml
+    - vca-apps/idjango.yml
+    - vca-apps/login-webapp.yml
+    - vca-apps/matomo.yml
+    - vca-apps/mediawiki.yml
+    - vca-apps/membership-ads.yml
+    - vca-apps/membership-form.yml
     - vca-apps/move4water-backend.yml
     - vca-apps/move4water-webapp.yml
-    - vca-apps/geo-server.yml
-    - vca-apps/data-form.yml  
-    - vca-apps/artsdb-webapp.yml  
-    - vca-apps/artsdb-backend.yml  
+    - vca-apps/outline.yml
+    - vca-apps/pool-api.yml
+    - vca-apps/pool-webapp.yml
+    - vca-apps/ticket-form.yml
+    - vca-apps/vca-api.yml
+    - vca-apps/vueca.yml
+    - vca-apps/washmap.yml
+    - vca-apps/wordpress.yml
