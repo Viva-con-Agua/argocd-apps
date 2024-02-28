@@ -39,3 +39,4 @@ resources:
     - vca-apps/vueca.yml
     - vca-apps/washmap.yml
     - vca-apps/wordpress.yml
+    - vca-apps/donation-view.yml  
