@@ -36,6 +36,7 @@ resources:
     - vca-apps/pool-webapp.yml
     - vca-apps/ticket-form.yml
     - vca-apps/vca-api.yml
+    - vca-apps/vinywaji.yml
     - vca-apps/vueca.yml
     - vca-apps/washmap.yml
     - vca-apps/wordpress.yml
