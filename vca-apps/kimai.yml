@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kimai
+spec:
+  destination:
+    name: in-cluster
+  project: basic-cluster
+  source:
+    repoURL: https://github.com/Viva-con-Agua/kimai-deploy.git
+    path: ./
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

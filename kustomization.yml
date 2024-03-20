@@ -24,6 +24,7 @@ resources:
     - vca-apps/geo-server.yml
     - vca-apps/headoffice-webapp.yml
     - vca-apps/idjango.yml
+    - vca-apps/kimai.yml
     - vca-apps/login-webapp.yml
     - vca-apps/matomo.yml
     - vca-apps/mediawiki.yml
