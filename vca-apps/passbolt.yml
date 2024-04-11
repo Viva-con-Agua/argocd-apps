@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: passbolt
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/passbolt-deploy.git
+        revision: HEAD
+        directories:
+          - path: overlays/*
+  template:
+    metadata:
+      name: "passbolt-{{path.basename}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-prod"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/passbolt-deploy.git
+        path: "{{path}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
