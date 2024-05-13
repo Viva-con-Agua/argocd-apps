@@ -43,4 +43,5 @@ resources:
     - vca-apps/vinywaji.yml
     - vca-apps/vueca.yml
     - vca-apps/washmap.yml
+    - vca-apps/wekan.yml
     - vca-apps/wordpress.yml
