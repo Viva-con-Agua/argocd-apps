@@ -6,7 +6,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/Viva-con-Agua/nats-deploy.git
-        revision: k8s_deployment
+        revision: main
         directories:
           - path: stages/*
   template:
@@ -18,7 +18,7 @@ spec:
       project: "vca-{{path.basename}}"
       source:
         repoURL: https://github.com/Viva-con-Agua/nats-deploy.git
-        targetRevision: k8s_deployment
+        targetRevision: main
         path: "{{path}}"
       syncPolicy:
         automated:
