@@ -45,3 +45,4 @@ resources:
     - vca-apps/washmap.yml
     - vca-apps/wekan.yml
     - vca-apps/wordpress.yml
+    - vca-apps/web-components.yml
