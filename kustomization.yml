@@ -46,3 +46,4 @@ resources:
     - vca-apps/wekan.yml
     - vca-apps/wordpress.yml
     - vca-apps/web-components.yml
+    - vca-apps/payment-form.yml
