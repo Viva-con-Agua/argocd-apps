@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: payment
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/payment-deploy.git
+        revision: HEAD
+        directories:
+          - path: "*"
+  template:
+    metadata:
+      name: "payment-{{path}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-{{path}}"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/payment-deploy.git
+        targetRevision: HEAD
+        path: "{{path}}"
+        kustomize:
+          version: kustomize5
+      syncPolicy:
+        automated:
+          prune: false
+          selfHeal: false
