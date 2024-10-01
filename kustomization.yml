@@ -14,12 +14,12 @@ resources:
     - basic-cluster/ory-hydra.yml
 
     - vca-apps/projects.yml
-    - vca-apps/artsdb-backend.yml  
-    - vca-apps/artsdb-webapp.yml  
+    - vca-apps/artsdb-backend.yml
+    - vca-apps/artsdb-webapp.yml
     - vca-apps/ccm19.yml
     - vca-apps/choose-a-pool.yml
     - vca-apps/contact-form.yml
-    - vca-apps/data-form.yml  
+    - vca-apps/data-form.yml
     - vca-apps/donation-form.yml
     - vca-apps/donation-view.yml
     - vca-apps/geo-server.yml
@@ -47,3 +47,4 @@ resources:
     - vca-apps/wordpress.yml
     - vca-apps/web-components.yml
     - vca-apps/payment.yml
+    - vca-apps/base.yml
