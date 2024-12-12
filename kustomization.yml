@@ -47,3 +47,4 @@ resources:
     - vca-apps/web-components.yml
     - vca-apps/payment.yml
     - vca-apps/base.yml
+    - vca-apps/tour.yml

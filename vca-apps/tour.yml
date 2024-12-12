@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: tour
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/Viva-con-Agua/tour-deploy.git
+        revision: HEAD
+        directories:
+          - path: "*"
+  template:
+    metadata:
+      name: "tour-{{path}}"
+    spec:
+      destination:
+        name: in-cluster
+      project: "vca-{{path}}"
+      source:
+        repoURL: https://github.com/Viva-con-Agua/tour-deploy.git
+        targetRevision: HEAD
+        path: "{{path}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
