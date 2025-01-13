@@ -22,7 +22,6 @@ resources:
     - vca-apps/data-form.yml
     - vca-apps/donation-form.yml
     - vca-apps/donation-view.yml
-    - vca-apps/geo-server.yml
     - vca-apps/headoffice-webapp.yml
     - vca-apps/idjango.yml
     - vca-apps/kimai.yml
