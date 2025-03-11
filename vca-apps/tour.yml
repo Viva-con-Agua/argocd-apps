@@ -22,5 +22,5 @@ spec:
         path: "{{path}}"
       syncPolicy:
         automated:
-          prune: false
+          prune: true
           selfHeal: true
