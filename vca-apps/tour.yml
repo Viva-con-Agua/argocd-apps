@@ -20,7 +20,7 @@ spec:
         repoURL: https://github.com/Viva-con-Agua/tour-deploy.git
         targetRevision: HEAD
         path: "{{path}}"
-#      syncPolicy:
-#        automated:
-#          prune: false
-#          selfHeal: false
+      syncPolicy:
+        automated:
+          prune: false
+          selfHeal: false
