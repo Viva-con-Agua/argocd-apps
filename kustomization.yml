@@ -45,5 +45,6 @@ resources:
     - vca-apps/wordpress.yml
     - vca-apps/web-components.yml
     - vca-apps/payment.yml
+    - vca-apps/mailer.yml
     - vca-apps/base.yml
     - vca-apps/tour.yml
