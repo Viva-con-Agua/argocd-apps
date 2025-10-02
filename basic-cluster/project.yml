@@ -8,6 +8,9 @@ spec:
     - name: in-cluster
       server: https://kubernetes.default.svc
       namespace: "*"
+    - name: luma-cluster
+      server: https://45.132.126.38:6443
+      namespace: "*"
   sourceRepos:
     - https://github.com/Viva-con-Agua/*
   clusterResourceWhitelist:
