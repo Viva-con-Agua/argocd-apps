@@ -13,3 +13,19 @@ spec:
     automated:
       prune: true
       selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: k8s-ingress-luma
+spec:
+  destination:
+    name: luma-cluster
+  project: basic-cluster
+  source:
+    repoURL: https://github.com/Viva-con-Agua/k8s-ingress-deploy.git
+    path: ./
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
