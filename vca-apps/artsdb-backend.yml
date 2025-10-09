@@ -20,8 +20,6 @@ spec:
         repoURL: https://github.com/Viva-con-Agua/artsdb-backend-deploy.git
         targetRevision: HEAD
         path: "{{path}}"
-        kustomize:
-          version: kustomize
       syncPolicy:
         automated:
           prune: false
