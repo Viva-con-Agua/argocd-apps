@@ -21,7 +21,7 @@ spec:
         targetRevision: HEAD
         path: "{{path}}"
         kustomize:
-          version: kustomize5
+          version: kustomize
       syncPolicy:
         automated:
           prune: false
