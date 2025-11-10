@@ -20,10 +20,7 @@ spec:
         repoURL: https://github.com/Viva-con-Agua/web-components-deploy.git
         targetRevision: HEAD
         path: "{{path}}"
-      resourceExclusions:
-        - group: networking.k8s.io
-          kind: Ingress
       syncPolicy:
         automated:
           prune: true
-          selfHeal: true
+          selfHeal: false
