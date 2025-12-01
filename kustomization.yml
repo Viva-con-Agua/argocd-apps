@@ -23,7 +23,7 @@ resources:
     - vca-apps/donation-form.yml
     - vca-apps/donation-view.yml
     - vca-apps/headoffice-webapp.yml
-    - vca-apps/idjango.yml
+#    - vca-apps/idjango.yml
     - vca-apps/kimai.yml
     - vca-apps/login-webapp.yml
     - vca-apps/matomo.yml
